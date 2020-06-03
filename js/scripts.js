@@ -26,4 +26,12 @@ $(document).ready(function() {
   const result = add(number1, number2);
   $("#output").text(result);
   });
+
+  $("form#sub").submit(function(event) {
+    event.preventDefault();
+    const number1 = parseInt($("#sub1").val());
+    const number2 = parseInt($("#sub2").val());
+    const result = subtract(number1, number2);
+    $("#output").text(result);
+    });
 });
